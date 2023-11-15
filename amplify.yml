@@ -8,12 +8,12 @@ backend:
 frontend:
   phases:
     preBuild:
-      commands:
+      # commands:
         - nvm use 18
         - npm ci
     build:
       commands:
-        - nvm use 18
+        # - nvm use 18
         - npm run build
   artifacts:
     baseDirectory: .next
